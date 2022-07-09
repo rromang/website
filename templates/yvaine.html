@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yvaine</title>
+    <!-- Bootstrap -->
+    <link href="../static/css/bootstrap-4.4.1.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg" id="navbar">
+      <a class="navbar-brand" href="#"><img src="../static/images/logo.jpg" width="80" height="82" alt=""/></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+     </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+               <a class="nav-link" href="{{ url_for('welcome') }}" id="home">HOME </a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="{{ url_for('page2') }}" id="about">About </a>
+            </li>
+         <li class="nav-item">
+               <a class="nav-link" href="{{ url_for('page3') }}" id="portfolio">Portfolio<br>Work </a>
+            </li> 
+         <li class="nav-item">
+               <a class="nav-link" href="{{ url_for('page1') }}" id="yvaine">Her majesty:<br>Yvaine <span class="sr-only">(current)</span></a>
+            </li>
+         <li class="nav-item">
+               <a class="nav-link" href="https://flic.kr/ps/3y7UMF" id="hobby">Amateur<br>Photography</a>
+            </li>
+         <li class="nav-item">
+               <a class="nav-link" href="https://www.linkedin.com/in/rosaicelarg" id="linkedin"><img src="../static/images/LI-In-Bug.png" width="64" height="55" alt="linkedin"/></a>
+            </li>
+         <li class="nav-item">
+               <a class="nav-link" href="https://github.com/rromang" id="github"><img src="../static/images/GitHub-Mark-Light-32px.png" width="49" height="47" alt="github"/></a>
+            </li>
+         </ul>
+      </div>
+   </nav>
+    <section>
+   <div class="jumbotron jumbotron-fluid text-center">		  
+<h1 class="display-4" id="hrh">Her Majesty:</h1>
+       <p class="lead" id="yvaine-name">Yvaine</p>
+	   <p class="hor-line"><img src="../static/images/Rectangle_4.png" width="892" height="14" alt=""/></p>
+       <p id="hero-text">My family's loving companion for the past year.</p>
+
+    </div>
+    </section>
+
+    <section id="about-cat">
+      <div class="container">
+        <div id="yvaine-bio" class="row">
+          <div class="col-12 text-center">
+            <h2 id="yvaine-bio-title">Yvaine's short bio:&nbsp; &nbsp;</h2>
+            <p id="bio-yvaine">Yvaine (pronounced: E-vain) is a British short hair cat, blue variety.<br>She gets her name from the book, later made into movie "Stardust" (which I must confess have not read yet but definitely seen the movie).<br>She was born April 2021 and has been part of our family since July 2021.</p>
+          </div>
+        </div>
+
+        <div class="row" id="yvaine-images">
+          <div class="col-md-6 col-12 text-center" id="yvaine1">
+            <img class="img-fluid" id="yvaine-baby" src="../static/images/yvaine/IMG_2566.jpeg" alt="">
+            <h4 id="tiny-yvaine">She was a tiny thing...</h4>
+            <h6 id="tiny-yvaine2">Still unsure about her place in the family.</h6>
+          </div>
+          <div class="col-md-6 col-12 text-center mt-md-0 mt-2" id="yvaine2">
+            <img class="img-fluid" id="yvaine-baby-box" src="../static/images/yvaine/IMG_2607.gif" alt="">
+			<h4 id="tiny-yvaine3">But, like most cats...</h4>
+            <h6 id="tiny-yvaine4">Boxes are a favorite from the beginning.</h6>
+          </div>
+
+		  <div class="col-md-6 col-12 text-center" id="yvaine3">
+            <img class="img-fluid" id="yvaine-peek" src="../static/images/yvaine/IMG_2981.jpeg" alt="">
+            <h4 id="sleepy-yvaine">She started getting comfortable...</h4>
+            <h6 id="sleepy-yvaine2">But was alert of her new environment.</h6>
+          </div>
+          <div class="col-md-6 col-12 text-center mt-md-0 mt-2" id="yvaine4">
+            <img class="img-fluid" id="yvaine-blanket" src="../static/images/yvaine/IMG_3196.jpeg" alt="">
+			<h4 id="hidden-yvaine">And, she is a master of disguise...</h4>
+            <h6 id="hiddent-yvaine2">Mostly because, for some reason, I keep buying gray blankets.</h6>
+          </div>
+
+		  <div class="col-md-6 col-12 text-center" id="yvaine5">
+            <img class="img-fluid" id="yvaine-fluid" src="../static/images/yvaine/IMG_3362.gif" alt="">
+            <h4 id="fluid-yvaine">Now, clearly at ease...</h4>
+            <h6 id="fluid-yvaine2">She can be "flexible" in how and where she relaxes.</h6>
+          </div>
+          <div class="col-md-6 col-12 text-center mt-md-0 mt-2" id="yvaine6">
+            <img class="img-fluid" id="yvaine-pose" src="../static/images/yvaine/IMG_3309.jpeg" alt="">
+			<h4 id="pose-yvaine">But most importantly...</h4>
+            <h6 id="pose-yvaine2">She is a regal cat, which why she gets to be called every once in a while "Her Majesty".</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="text-center" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p id="copy">Copyright © R. Roman. All rights reserved.</p>
+			<p id="date"><script>
+    			var today = new Date; document.getElementById('date').innerHTML= today.toDateString();</script>
+             </p> 
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../static/js/jquery-3.4.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../static/js/popper.min.js"></script>
+    <script src="../static/js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>
