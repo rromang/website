@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resume</title>
+    <!-- Bootstrap -->
+    <link href="../static/css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link href="../static/css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg" id="navbar">
+      <a class="navbar-brand" href="#"><img src="../static/images/logo.jpg" width="80" height="82" alt=""/></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+     </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+               <a class="nav-link" href="{{ url_for('welcome') }}" id="home">HOME </a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="{{ url_for('page2') }}" id="about">About <span class="sr-only">(current)</span></a>
+            </li>
+         <li class="nav-item">
+               <a class="nav-link" href="{{ url_for('page3') }}" id="portfolio">Portfolio<br>Work </a>
+            </li> 
+         <li class="nav-item">
+               <a class="nav-link" href="{{ url_for('page1') }}" id="yvaine">Her majesty:<br>Yvaine</a>
+            </li>
+         <li class="nav-item">
+               <a class="nav-link" href="https://flic.kr/ps/3y7UMF" id="hobby">Amateur<br>Photography</a>
+            </li>
+         <li class="nav-item">
+               <a class="nav-link" href="https://www.linkedin.com/in/rosaicelarg" id="linkedin"><img src="../static/images/LI-In-Bug.png" width="64" height="55" alt="linkedin"/></a>
+            </li>
+         <li class="nav-item">
+               <a class="nav-link" href="https://github.com/rromang" id="github"><img src="../static/images/GitHub-Mark-Light-32px.png" width="49" height="47" alt="github"/></a>
+            </li>
+         </ul>
+      </div>
+   </nav>
+    <div class="container" id="resume-body">
+      <hr>
+      <div class="row">
+        <div class="col-6">
+          <h1>Rosaicela (Rosa) Román</h1>
+        </div>
+        <div class="col-6">
+          <p class="text-right"><a href="../static/docs/Rosa Roman Resume.pdf">Download my Resume</a></p>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-8 col-sm-12">
+          <div class="media">
+            <div class="media-body" id="summary-body">
+              <h5 class="mt-0" id="summary">OUTCOME-ORIENTED DATA ANALYST/SCIENTIST</h5>
+              Began career in lab and bring passion for data-driven decision making / deriving actionable insights. Easily (and clearly) communicate with all audiences, both technical and nontechnical – skill mastered while serving as Lab Supervisor with responsibility for commercial product development. Recently completed Data Analytics Bootcamp at University of Arizona and currently preparing for Data Scientist certification. 
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="row justify-content-md-around m-1" id="contact-info">
+            <address>
+              <strong>Rosaicela Roman</strong><br>
+              Gilbert, AZ 85298<br>
+<!--              <abbr title="Phone">P:</abbr> (123) 456-7890<br>-->
+              <a href="mailto:#">rrgomez2008@gmail.com</a>
+            </address>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-6 col-sm-12" id="education">
+          <h2>Education</h2>
+          <hr>
+          <div class="row">
+            <div class="col-6">
+              <h5>DataCamp</h5>
+            </div>
+            <div class="col-6">
+              <h5 class="text-right"><span aria-hidden="true"></span> (in progress) 2022</h5>
+            </div>
+          </div>
+          <h6><span class="badge badge-secondary">Certification</span></h6>
+          <p>Data Science with Python</p>
+          <div class="row">
+            <div class="col-6">
+              <h5>University of Arizona</h5>
+            </div>
+            <div class="col-6">
+              <h5 class="text-right"><span aria-hidden="true"></span> 2021</h5>
+            </div>
+          </div>
+          <h6><span class="badge badge-secondary">Certification</span></h6>
+          <p>Data Analytics</p>
+          <div class="row">
+            <div class="col-6">
+              <h5>University of Michigan</h5>
+            </div>
+            <div class="col-6">
+              <h5 class="text-right"><span aria-hidden="true"></span> 2005</h5>
+            </div>
+          </div>
+          <h6><span class="badge badge-secondary">Masters</span></h6>
+          <p>Toxicology&nbsp;</p>
+			
+		   <div class="row">
+            <div class="col-6">
+              <h5>University of Puerto Rico</h5>
+            </div>
+            <div class="col-6">
+              <h5 class="text-right"><span aria-hidden="true"></span> 2003</h5>
+            </div>
+          </div>
+		<h6><span class="badge badge-secondary">Bachelors</span></h6>
+          <p>Biology&nbsp;</p>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <h2>Skill Set</h2>
+          <hr>
+          <div class="progress mt-4">
+            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%"> Front End Visualization</div>
+          </div>
+          <div class="progress mt-4">
+            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"> Python</div>
+          </div>
+          <div class="progress mt-4">
+            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 65%"> SQL</div>
+          </div>
+          <div class="progress mt-4">
+            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"> Fundamental Statistics</div>
+          </div>
+          <div class="progress mt-4">
+            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%"> PowerBI/Tableau</div>
+          </div>
+          <div class="progress mt-4">
+            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%"> HTML</div>
+          </div>
+          <div class="progress mt-4">
+            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%"> VBA</div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <h2>Work Experience</h2>
+      <hr>
+      <div class="row" id="work-experience">
+        <div class="col-md-6 col-sm-12">
+          <div class="row">
+            <div class="col-5">
+              <h4>Heliae</h4>
+            </div>
+            <div class="col-6">
+              <h5 class="text-right"><span aria-hidden="true"></span> 2019 - 2022</h5>
+            </div>
+          </div>
+          <h5><span class="badge badge-secondary">Lab Team Supervisor</span></h5>
+          <p>Manage product development and testing in 2 of the company’s 5 labs and supervised up to 4 employees. Took a data-centric approach to algology strain development and contributed to attainment of 2 patents. Achieved 30X improvement in strain productivity (biomass + growth rate).</p>
+          <ul>
+            <li>Shared easily digestible data and created a variety of graphs and visualizations for company leadership to share with board of directors.</li>
+            <li>Translated complex scientific data / technical data into formats for non-technical decision makers.</li>
+            <li>Operated in a field with virtually no research reference and successfully added 6 new microorganism strains with solid commercial potential.</li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="row">
+            <div class="col-5">
+              <h4>Heliae</h4>
+            </div>
+            <div class="col-6">
+              <h5 class="text-right"><span aria-hidden="true"></span> 2018 - 2019</h5>
+            </div>
+          </div>
+          <h5><span class="badge badge-secondary">Senior Research Scientist</span></h5>
+          <p>Enabled the company to make data-driven decisions based on actionable insights and analysis of high throughput data. Based on completion of 2 strain development projects, recommended full adoption of an oil-based product (20% improved performance) with huge downstream potential revenue in animal and human nutrition. Personally managed routine production, experiment planning, and testing using specialized tools (flow cytometer, automated liquid handler, benchtop fermentation, etc.) typically utilized in other areas of microbiology/molecular biology.</p>
+        </div> 
+      </div>
+		
+		      <div class="row" id="work-experience-2">
+        <div class="col-md-6 col-sm-12">
+          <div class="row">
+            <div class="col-5">
+              <h4>Heliae</h4>
+            </div>
+            <div class="col-6 col-xl-7">
+              <h5 class="text-right"><span aria-hidden="true"></span> 2014 - 2018</h5>
+            </div>
+          </div>
+          <h5><span class="badge badge-secondary">Research Associate</span></h5>
+          <p>Developed analytical toolbox that became the foundation for strain improvement project execution after realizing that the company needed a way to effectively analyze product performance. Analyzed numerous data sets to derive insights and designed formal methodology determine if the strains met requirements. Took on statistical analysis and made raw data meaningful.</p>
+          <ul>
+            <li>Credited with designing a novel ranking system with which to compare microbiological strains.</li>
+            <li>Developed high throughput screening assays to identify improved strains made via strain evolution. Collected and analyzed data from flow cytometer and fluorescent activated cell sorting assays.</li>
+            <li>Maintained integrity of original strains and improved overall quality, data integrity, and product flow.</li>
+			<li>Played critical role in analysis of future strain improvement projects.</li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="row">
+            <div class="col-5 col-xl-8">
+              <h4>SMCC</h4>
+            </div>
+            <div class="col-6 offset-xl-0 col-xl-4">
+              <h5 class="text-right"><span aria-hidden="true"></span> 2012 - 2014</h5>
+            </div>
+          </div>
+          <h5><span class="badge badge-secondary">Biology Instructor</span></h5>
+          <p>Taught Introductory Biology class (lecture + lab) for nonmajors. Supervised all lab exercises and closely monitored student performance. Authored lesson plans and ensured that all core concepts were covered, understood, and applied in labs. Built reputation for engaging uninterested nonmajors and excelled in discussing complex concepts with an audience that often did not have a scientific foundation.</p>
+				  </div>
+      </div>
+      <hr>
+
+      <hr>
+<!--
+      <h2>Contact</h2>
+      <hr>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8  col-12 jumbotron">
+            <form>
+              <div class="form-group" id="contact-form">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+              </div>
+              <div class="form-group">
+                <label for="email">E-Mail</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" aria-describedby="emailHelp">
+                <span id="emailHelp" class="form-text text-muted" style="display: none;">Please enter a valid e-mail address.</span>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea rows="10" cols="100" class="form-control" id="message" name="message" placeholder="Message" aria-describedby="messageHelp"></textarea>
+                <span id="messageHelp" class="form-text text-muted" style="display: none;">Please enter a message.</span>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+-->
+      <hr>
+    <footer class="text-center" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p id="copy">Copyright © R. Roman. All rights reserved.</p>
+			<p id="date"><script>
+    			var today = new Date; document.getElementById('date').innerHTML= today.toDateString();</script>
+             </p> 
+          </div>
+        </div>
+      </div>
+    </footer>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../static/js/jquery-3.4.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../static/js/popper.min.js"></script>
+    <script src="../static/js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>
