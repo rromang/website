@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio (HomePage)</title>
+    <!-- Bootstrap -->
+  <link href="../static/css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+  </head>
+<body>
+<nav class="navbar navbar-expand-lg" id="navbar">
+       <a class="navbar-brand" href="#"><img src="../static/images/skylark-logo-2-xsmall.png" width="170" height="82" alt=""/></a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+             <li class="nav-item active">
+                <a class="nav-link" href="#" id="home">HOME <span class="sr-only">(current)</span></a>
+             </li>
+             <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('page2') }}" id="about">About</a>
+             </li>
+			 <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('page3') }}" id="portfolio">Portfolio<br>Work</a>
+             </li> 
+			 <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('page1') }}" id="yvaine">Her majesty:<br>Yvaine</a>
+             </li>
+			 <li class="nav-item">
+                <a class="nav-link" href="https://flic.kr/ps/3y7UMF" id="hobby">Amateur<br>Photography</a>
+             </li>
+			 <li class="nav-item">
+                <a class="nav-link" href="https://www.linkedin.com/in/rosaicelarg" id="linkedin"><img src="../static/images/LI-In-Bug.png" width="64" height="55" alt="linkedin"/></a>
+             </li>
+			 <li class="nav-item">
+                <a class="nav-link" href="https://github.com/rromang" id="github"><img src="../static/images/GitHub-Mark-Light-32px.png" width="49" height="47" alt="github"/></a>
+             </li>
+          </ul>
+       </div>
+</nav>
+<!-- Hero Section -->
+<section class="hero" id="hero">
+    <div class="jumbotron jumbotron-fluid text-center">		  
+<h1 class="display-4"><img src="../static/images/Rectangle_3.png" alt="" width="382" height="118" class="img-fluid"/></h1>
+<!--       <p class="lead"><img src="../static/images/I’m_Rosa.png" width="211" height="42" alt=""/></p>-->
+	    <p class="lead" id="hero-text1">Welcome to SkyLark Consulting &amp; Analytics LLC</p>
+	   <p class="hor-line"><img src="../static/images/Rectangle_4.png" alt="" width="892" height="14" class="img-fluid"/></p>
+       <p class="text-center" id="hero-text">Data analyst/scientist services. Creating visualizations and analysis for smart/informed business decisions.<br>
+Biology and biotechnology consulting services.</p>
+	</div>
+</section>
+  <!-- About Section -->
+  <section class="about" id="about2">
+	  		 <p class="hor-line text-center"><img src="../static/images/Rectangle_4.png" alt="" width="892" height="14" class="img-fluid"/></p>
+       <p class="lead text-center">
+          <a class="btn btn-primary btn-lg" href="{{ url_for('page2') }}" role="button" id="about-btn">ABOUT ME</a>
+		  <a class="btn btn-primary btn-lg" href="{{ url_for('page3') }}" role="button" id="portfolio-btn">PORTFOLIO</a>
+       </p>
+	  
+  	<div class="d-flex justify-content-center">
+			 <p class="hor-line text-center"><img src="../static/images/Rectangle_4.png" alt="" width="892" height="14" class="img-fluid"/></p>
+	    </div>
+  	<div class="d-flex justify-content-center">
+	  	 
+    </div>
+  </section>
+<!-- Form Section -->
+<section>
+  <div class="row" id="form-row">
+    <div class="col-6">
+<form>
+  <fieldset>
+      <legend>Request Info</legend>
+          
+ 
+<p>
+        <label>First name* : 
+          <input name="firstName" /></label>
+      </p>
+ 
+ 
+       
+ 
+<p>
+        <label>Last name* : 
+          <input name="lastName" /></label>
+      </p>
+ 
+ 
+     
+       
+ 
+<p>
+        <label>Email* :&nbsp;
+          <input type="email" name="email" /></label>
+      </p>
+
+ 
+ 
+       
+ 
+<p>
+        <label>
+          Comments* :
+          <br />
+          <textarea name="comments" cols="30" rows="3"></textarea>
+        </label>
+      </p>
+ 
+ 
+       
+ 
+<p>
+	<p>*required field</p>
+        <button type="submit">Submit</button>
+      </p>
+ 
+ 
+     </fieldset>
+</form>
+</div>
+
+
+	
+	
+</div>
+
+</section>
+<!-- More Info Section -->
+<footer>
+<!--    <article class="footer_column">-->
+<!--      <h3>ABOUT</h3>-->
+<!--      <img src="../images/placeholder.jpg" alt="" width="400" height="200" class="cards"/>-->
+<!--      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </p>-->
+<!--    </article>-->
+<!--    <article class="footer_column">-->
+<!--      <h3>LOCATION</h3>-->
+<!--      <img src="../images/placeholder.jpg" alt="" width="400" height="200" class="cards"/>-->
+<!--      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </p>-->
+<!--    </article>-->
+  </footer>
+  <!-- Footer Section -->
+<!--
+  <section class="footer_banner" id="contact">
+    <h2 class="hidden">Footer Banner Section </h2>
+    <p class="hero_header">FOR THE LATEST NEWS &amp; UPDATES</p>
+    <div class="button">subscribe</div>
+  </section>
+   Copyrights Section 
+  <div class="copyright">&copy;2021- <strong>Light Theme</strong></div>
+-->
+
+<!-- Main Container Ends -->
+</body>
+</html>
